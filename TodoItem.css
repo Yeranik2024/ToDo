@@ -1,0 +1,18 @@
+.todo-item {
+    border-top: 0.5px solid #e3e3e3;
+    padding: 10px 5px; 
+    display: flex;
+    justify-content: space-between;
+}
+label {
+    font-size: 18px;
+}
+input {
+    margin-right: 10px;
+}
+button {
+   font-size: 18px;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
