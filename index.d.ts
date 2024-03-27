@@ -1,2 +1,12 @@
-export function atob(encodedData: string): string | null
-export function btoa(stringToEncode: string): string | null
+import { Parser } from 'acorn' 
+
+declare const jsx: (options?: jsx.Options) => (BaseParser: typeof Parser) => typeof Parser;
+
+declare namespace jsx {
+  interface Options {
+    allowNamespacedObjects?: boolean;
+    allowNamespaces?: boolean;
+  }
+}
+
+export = jsx;
